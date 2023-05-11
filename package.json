@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "ts-node-dev src/app.ts",
-    "clean": " ts-node-dev src/prisma/clean/clean.ts"
+    "clean": " ts-node-dev src/prisma/clean/clean.ts",
+    "build":"tsc src/app.ts"
     
   },
   "keywords": [],
