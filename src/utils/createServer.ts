@@ -11,7 +11,7 @@ import { TableRoutes } from "../routes/table.routes";
 export async function createServer() {
   const app = fastify({});
   await app.register(cors, {
-    origin: process.env.ORIGIN,
+    origin: "https://kanban-clone-seven.vercel.app",
     credentials: true,
   });
   app.register(TaskRout, { prefix: "/api/tasks" });
